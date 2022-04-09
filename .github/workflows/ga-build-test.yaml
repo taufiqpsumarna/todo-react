@@ -9,13 +9,13 @@ on:
     branches: [ master ]
 jobs:
   build_and_test: #Jalankan flow build and test dengan ubuntu versi latest
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Clonning Project #Lakukan clonning project dengan action checkout
       uses: action/checkout@v2
     - name: List files
       run : |
-       ls ${{ github.workspace }} 
+      ls ${{ github.workspace }} 
     - name: Setup Node.js 14 #Instalasi node js versi 14 dengan action setupnode14
       uses: action/setupnode14@v2
       with: 
