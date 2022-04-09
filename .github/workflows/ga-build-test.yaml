@@ -15,7 +15,7 @@ jobs:
       uses: action/checkout@v2
     - name: List files
       run : |
-      ls ${{ github.workspace }} 
+        ls ${{ github.workspace }} 
     - name: Setup Node.js 14 #Instalasi node js versi 14 dengan action setupnode14
       uses: action/setupnode14@v2
       with: 
