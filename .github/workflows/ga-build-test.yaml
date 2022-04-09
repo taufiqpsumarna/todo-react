@@ -17,7 +17,7 @@ jobs:
       run : |
         ls ${{ github.workspace }} 
     - name: Setup Node.js 14 #Instalasi node js versi 14 dengan action setupnode14
-      uses: actions/setup-node14@v2
+      uses: actions/setup-node@v2
       with: 
         node-version: '14'
     - name: Install project #Lakukan instalasi project
